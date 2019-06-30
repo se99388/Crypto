@@ -1,0 +1,340 @@
+
+body, html, .container-fluid {
+    height: 100%;
+    background-image: url('/assets/images/background-img.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+}
+
+#section01 a {
+    padding-top: 60px;
+  }
+
+  #section01 a span {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    width: 46px;
+    height: 46px;
+    margin-left: -23px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    box-sizing: border-box;
+  }
+
+  #section01 a span::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: '';
+    width: 16px;
+    height: 16px;
+    margin: -12px 0 0 -8px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-sizing: border-box;
+  }
+  
+  .demo a {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color: #fff;
+    font : normal 400 20px/1 'Josefin Sans', sans-serif;
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: opacity .3s;
+  }
+
+  .demo a:hover {
+    opacity: .5;
+  }
+
+  section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  section::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 80%;
+    background: -webkit-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
+    background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
+  }
+
+  #section01 a span::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    content: '';
+    width: 44px;
+    height: 44px;
+    box-shadow: 0 0 0 0 rgba(255,255,255,.1);
+    border-radius: 100%;
+    opacity: 0;
+    -webkit-animation: sdb03 3s infinite;
+    animation: sdb03 3s infinite;
+    box-sizing: border-box;
+  }
+
+  @-webkit-keyframes sdb03 {
+    0% {
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    60% {
+      box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes sdb03 {
+    0% {
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    60% {
+      box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+
+.background{
+    background-image: url('/assets/images/background-img.jpg');
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+}
+
+h1{
+	font-family: 'Dancing Script', cursive;
+    font-size: 150px;
+    color: #CEF0D4;
+    text-shadow: 2px 2px 5px red;
+    position: absolute;
+    top: 25%;
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.rowOfTabs{
+    background-image: url('/assets/images/background-img.jpg');
+    min-height: 100%;
+    height: auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#loader {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background: url(/assets/images/lg.circle-slack-loading-icon.gif) no-repeat center center;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    margin: -75px 0 0 -75px;
+  }
+
+#tabs{
+    width: 95%;
+    margin: auto;
+    background: rgba(204, 204, 204, 0.0);
+    height: 600px;  
+    font-family: 'Dancing Script', cursive; 
+}
+
+#about{
+    height: 90%;
+    overflow-y: auto;
+}
+
+#about > *{
+    color:white;
+    font-size: 27px;
+    text-shadow: 2px 2px 5px red;
+}
+
+#about  a{
+    color:blue;
+    font-size: 30px;
+}
+
+#coins{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    overflow-y: auto;
+    height:90%;
+}
+
+.coinDiv{
+    padding-top:10px;
+    padding-left: 20px;
+     width: 300px;
+     min-height: 150px;
+     height: auto;
+     margin: 5px;
+     display: grid;
+     grid-template-columns: 70% 30%;   
+     background: rgba(204, 204, 204, 0.7);
+     border-radius: 20px;  
+}
+  
+.coinDiv:hover{  
+    background: rgba(120, 120, 120, 0.9);
+    }
+
+.coinDIvLeftInner > *{
+    margin-bottom: 10px;
+}
+
+.coinImage{
+    width:20%;
+}
+
+.modal-body{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.coinsInModal{
+    margin: 3px;
+    background: rgba(204, 204, 204, 0.7);
+    border-radius: 20px;  
+}
+
+.coinsInModal:hover{
+    margin: 3px;
+    background: rgba(120, 120, 120, 0.9);
+    border-radius: 20px;  
+}
+.coin6{
+    font-family: 'Dancing Script', cursive; 
+    color: red;
+    font-size: 30px;
+}
+.modal-content {
+    text-align: center;
+}
+
+.modal-title{
+    margin: auto;
+}
+
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  #myImg{
+      height: 120px;
+      width: 100px;
+      border-radius: 20px;
+  }
+
+  #chartContainer{
+    animation: fadein 2s;
+  }
+
+  @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#selectedCoins{
+    margin-right: 10px;
+    width:30%;
+}
